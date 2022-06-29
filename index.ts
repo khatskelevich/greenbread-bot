@@ -1,4 +1,7 @@
+import * as dotenv from 'dotenv'
 import { Telegraf } from 'telegraf'
+
+dotenv.config()
 
 if (!process.env.TELEGRAM_TOKEN) throw new Error('Пустой API токен. Создание бота невозможно.')
 
